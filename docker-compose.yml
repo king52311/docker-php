@@ -1,6 +1,6 @@
 services:
   web:
-    image: jetsung/nginx-php:8.2
+    image: swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/jetsung/nginx-php:8.2
     container_name: php-nginx-app
     restart: always
     ports:
