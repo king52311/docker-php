@@ -4,7 +4,7 @@ services:
     container_name: php-nginx-app
     restart: always
     ports:
-      - "80:80"
+      - "81:80"
     environment:
       - TZ=Asia/Shanghai
     volumes:
