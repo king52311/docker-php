@@ -16,4 +16,4 @@ RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
 # （可选）安装 Composer 用于管理 PHP 依赖包
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-WORKING_DIR /var/www/html
+WORKDIR /var/www/html
