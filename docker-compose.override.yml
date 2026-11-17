@@ -1,0 +1,21 @@
+{
+  "services": {
+    "web": {
+      "healthcheck": {
+        "test": [
+          "CMD",
+          "/opt/container-health/probe",
+          "http",
+          "http://127.0.0.1:80/"
+        ],
+        "interval": "30s",
+        "timeout": "10s",
+        "start_period": "30s",
+        "retries": 3
+      },
+      "volumes": [
+        "/data/docker-health/releases/d60ebf9e890ea3c8d27aff7e731324f610c090f6/probe-linux-amd64:/opt/container-health/probe:ro"
+      ]
+    }
+  }
+}
